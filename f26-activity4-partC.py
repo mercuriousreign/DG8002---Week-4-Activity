@@ -21,7 +21,7 @@ hottestDay = -1
 
 for x in temperatures:
   totalTemperature += x
-  if x >= hottestDay:
+  if x > hottestDay:
     hottestDay = x
   if x > 23:
     daysAbove23 +=1
@@ -42,9 +42,10 @@ for x in temperatures:
 
 summary = f"""
 
-Average Temperature is : {totalTemperature / 7 : .2f}
+Average Temperature is: {totalTemperature / 7 : .2f}
+HottestTemperature: {hottestDay}
 Days Above 23: {daysAbove23}
-Highest Temperature Index: {temperatures.index(hottestDay)}
+Highest Temperature Index: {temperatures.index(hottestDay)+1}
 
 """
 print(summary)
