@@ -13,9 +13,13 @@
 
 # TODO 1: Create inputs for the following information 
 #         - Your desired savings goal
+goal = float(input("Enter your desired saving goal"))
 #         - The amount of money as your base investment
+base = float(input("Enter your base investment"))
 #         - The annual interest rate
+rate = float(input("Enter the annual interest rate"))
 #         - The amount of money you want to deposit into the account every month (if any)
+deposit = float(input("Enter the deposit amount"))
 
 # TODO 2: Create variables to hold number of months and current balance of the account
 
