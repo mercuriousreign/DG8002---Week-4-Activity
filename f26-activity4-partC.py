@@ -19,6 +19,14 @@ hottestDay = -1
 
 # TODO 1: Iterate through every recorded temperature
 
+for x in temperatures:
+  totalTemperature += x
+  if x >= hottestDay:
+    hottestDay = x
+  if x > 23:
+    daysAbove23 +=1
+
+
     # TODO 2: Print the recorded temperature
 
     # TODO 3: Add the temperature to total
@@ -32,6 +40,14 @@ hottestDay = -1
 # TODO 7: Print the -> index <- of the highest temperature.
 
 
+summary = f"""
+
+Average Temperature is : {totalTemperature / 7 : .2f}
+Days Above 23: {daysAbove23}
+Highest Temperature Index: {temperatures.index(hottestDay)}
+
+"""
+print(summary)
 # EXPECTED OUTPUT
 # Average Temperature: 21.57
 # Days Above 23:  3
