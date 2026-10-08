@@ -13,13 +13,30 @@ registered_guests = [
     "Alice",
     "Bob"
 ]
+checked_guest = []
 
 
 # TODO 1: Create a while loop thap that continues until all guests are checked in.
 
-    # TODO 2: Ask the user to enter their name
+while len(registered_guests) > 0:
 
+    # TODO 2: Ask the user to enter their name
+    check = input("Hello what is your name? : ")
+  
     # TODO 3: Iterate through guest list and check whether their name appears in the registered guests list
+    if check in registered_guests:
+        print(f"Welcome {check}!")
+        checked_guest.append(registered_guests.pop(registered_guests.index(check)))
+        print(f"Checked in guests {checked_guest}")
+    else:
+        print(f"Sorry {check}, your name is not in the list")
+        print(f"Checked in guests {checked_guest}")
+
+
+print("All guests have been checked in!")
+
+
+
 
     # TODO 4: If registered and they're not already in checked in, add their name to the checked-in list and print a welcome message
 
