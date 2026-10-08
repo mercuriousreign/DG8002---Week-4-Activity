@@ -25,26 +25,29 @@ while len(registered_guests) > 0:
   
     # TODO 3: Iterate through guest list and check whether their name appears in the registered guests list
     if check in registered_guests:
+        # TODO 4: If registered and they're not already in checked in, add their name to the checked-in list and print a welcome message
         print(f"Welcome {check}!")
         checked_guest.append(registered_guests.pop(registered_guests.index(check)))
-        print(f"Checked in guests {checked_guest}")
+        # TODO 5: Otherwise, Display an appropriate message for unregistered guests
     else:
         print(f"Sorry {check}, your name is not in the list")
-        print(f"Checked in guests {checked_guest}")
+        
+    print(f"Checked in guests {checked_guest}")
 
 
+# TODO 7: Print a message telling us that all guests have successfully checked in!
 print("All guests have been checked in!")
 
 
 
 
-    # TODO 4: If registered and they're not already in checked in, add their name to the checked-in list and print a welcome message
+    
 
-    # TODO 5: Otherwise, Display an appropriate message for unregistered guests
+    
 
-    # TODO 6: Print the updated checked-in list
 
-# TODO 7: Print a message telling us that all guests have successfully checked in!
+
+
 
 # EXPECTED OUTPUT:
 # [ "Alice", "Bob"]
