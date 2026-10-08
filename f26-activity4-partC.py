@@ -43,9 +43,8 @@ for x in temperatures:
 summary = f"""
 
 Average Temperature is: {totalTemperature / 7 : .2f}
-HottestTemperature: {hottestDay}
 Days Above 23: {daysAbove23}
-Highest Temperature Index: {temperatures.index(hottestDay)+1}
+Highest Temperature Index: {temperatures.index(hottestDay)}
 
 """
 print(summary)
